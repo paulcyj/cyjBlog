@@ -62,8 +62,7 @@
     
     <link rel="stylesheet" href="/css/progressbar.css">
 <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
+    
     
     
 
@@ -133,6 +132,57 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-04-01T08:04:01.000Z">2020-04-01</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 minutes 读完 (大约 402 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/04/01/React%E7%9A%84%E5%86%85%E5%A4%96%E5%B1%82%E8%B7%AF%E7%94%B1%E9%85%8D%E7%BD%AE/">React的内外层路由配置</a>
+            
+        </h1>
+        <div class="content">
+            <h4 id="记录自己学习React碰到的问题"><a href="#记录自己学习React碰到的问题" class="headerlink" title="记录自己学习React碰到的问题"></a>记录自己学习React碰到的问题</h4><p>React与单纯html加js不同的地方在于其需要配置路由来实现不同功能组件的切换,因为React一切代码皆模组化。</p>
+<h4 id="第一步-使用npm安装react-router-dom"><a href="#第一步-使用npm安装react-router-dom" class="headerlink" title="第一步 使用npm安装react-router-dom"></a>第一步 使用npm安装react-router-dom</h4><p><code>npm install react-router-dom</code></p>
+<h4 id="第二步-根据项目需要新建文件夹，这里是我的文件结构"><a href="#第二步-根据项目需要新建文件夹，这里是我的文件结构" class="headerlink" title="第二步 根据项目需要新建文件夹，这里是我的文件结构"></a>第二步 根据项目需要新建文件夹，这里是我的文件结构</h4><p> └── src # 只有 src 下的文件才会被 Webpack 处理<br>    ├── components #框架文件夹<br>         ├──Frame<br>             ├── index.js<br>         ├── index.js<br>    ├── views   #组件文件夹<br>        ├──Login<br>            ├── index.js<br>        ├── Dashboard<br>            ├── index.js<br>        ├── Artical<br>            ├── index.js<br>        ├── index.js<br>    ├── routs  #路由文件夹<br>         ├── index.js<br>    ├── App.css<br>    ├── App.js<br>    ├── App.test.js<br>    ├── [floder_name] # 可以建立其他文件夹，以被 Webpack 成功导入<br>    ├── index.css<br>    ├── index.js # JavaScript 打包入口文件<br>    ├── logo.svg<br>    └── serviceWorker.js<br>    &gt; index.js皆为导出此文件夹组件</p>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2020/04/01/React%E7%9A%84%E5%86%85%E5%A4%96%E5%B1%82%E8%B7%AF%E7%94%B1%E9%85%8D%E7%BD%AE/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2020-02-25T04:01:46.000Z">2020-02-25</time>
                 
                 
@@ -154,7 +204,7 @@
         <div class="content">
             <h3 id="浅度学习了一下git的使用方法"><a href="#浅度学习了一下git的使用方法" class="headerlink" title="浅度学习了一下git的使用方法"></a>浅度学习了一下git的使用方法</h3><h4 id="Git-是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。"><a href="#Git-是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。" class="headerlink" title="Git 是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。"></a>Git 是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。</h4><ul>
 <li>安装<br>Git 各平台安装包下载地址为：<a href="http://git-scm.com/downloads">http://git-scm.com/downloads</a></li>
-<li>配置<br><code>$ git config --global user.name &quot;runoob&quot;</code><br><code>$ git config --global user.email test@runoob.com</code></li>
+<li>配置<br><code>$ git config --global user.name &quot;xxx&quot;</code><br><code>$ git config --global user.email test@xxx.com</code></li>
 <li>git clone<br><code>$ git clone xxxx</code></li>
 <li>提交代码<br>作为初学者，我目前使用的是git gui进行push的操作<br><img src="https://github.com/paulcyj/paulcyj.github.io/tree/master/images/git.png" alt="markdown" title="gitgui"><br>Rscan对文件夹进行扫描，文件若有改动的话会显示在左侧，点击commit和push就可以了</li>
 </ul>
@@ -289,7 +339,7 @@
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            2
+                            3
                         </p>
                     </a>
                 </div>
@@ -373,9 +423,6 @@
                     <span class="level-right">
                         <span class="level-item tag">hexo.io</span>
                     </span>
-                    <span id="busuanzi_container_site_pv">
-                        本站总访问量<span id="busuanzi_value_site_pv"></span>次
-                    </span>
                 </a>
             </li>
         
@@ -415,7 +462,7 @@
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/React/" style="font-size: 10px;">React</a>
+        <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/React/" style="font-size: 20px;">React</a>
     </div>
 </div>
     
@@ -427,6 +474,25 @@
         <h3 class="menu-label">
             最新文章
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2020/04/01/React%E7%9A%84%E5%86%85%E5%A4%96%E5%B1%82%E8%B7%AF%E7%94%B1%E9%85%8D%E7%BD%AE/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="React的内外层路由配置">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-04-01T08:04:01.000Z">2020-04-01</time></div>
+                    <a href="/2020/04/01/React%E7%9A%84%E5%86%85%E5%A4%96%E5%B1%82%E8%B7%AF%E7%94%B1%E9%85%8D%E7%BD%AE/" class="title has-link-black-ter is-size-6 has-text-weight-normal">React的内外层路由配置</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -478,6 +544,17 @@
         <ul class="menu-list">
         
         <li>
+            <a class="level is-marginless" href="/archives/2020/04/">
+                <span class="level-start">
+                    <span class="level-item">April 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
             <a class="level is-marginless" href="/archives/2020/02/">
                 <span class="level-start">
                     <span class="level-item">February 2020</span>
@@ -511,7 +588,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/React/">
                         <span class="tag">React</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -539,6 +616,25 @@
         
         <article class="media">
             
+            <a href="/2020/04/01/React%E7%9A%84%E5%86%85%E5%A4%96%E5%B1%82%E8%B7%AF%E7%94%B1%E9%85%8D%E7%BD%AE/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="React的内外层路由配置">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-04-01T08:04:01.000Z">2020-04-01</time></div>
+                    <a href="/2020/04/01/React%E7%9A%84%E5%86%85%E5%A4%96%E5%B1%82%E8%B7%AF%E7%94%B1%E9%85%8D%E7%BD%AE/" class="title has-link-black-ter is-size-6 has-text-weight-normal">React的内外层路由配置</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2020/02/25/Git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Git基本操作">
@@ -587,6 +683,17 @@
         <ul class="menu-list">
         
         <li>
+            <a class="level is-marginless" href="/archives/2020/04/">
+                <span class="level-start">
+                    <span class="level-item">April 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
             <a class="level is-marginless" href="/archives/2020/02/">
                 <span class="level-start">
                     <span class="level-item">February 2020</span>
@@ -620,7 +727,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/React/">
                         <span class="tag">React</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
